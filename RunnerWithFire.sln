@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFXRDemo", "CFXRDemo.csproj", "{C5B8473D-752F-EC0E-87B6-0D8748C7D2C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{DFD8AF66-C2B9-D103-5F6C-034BD6FA5F1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFXRRuntime", "CFXRRuntime.csproj", "{1B6D0451-BD50-DF1D-E344-3073D67C5B5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{CDA06DB4-CE24-3CF2-2EA7-F2BDC416397B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinoBloom.Runtime", "KinoBloom.Runtime.csproj", "{001CE11E-04FD-BC06-E18F-8858200F0955}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFXREditor", "CFXREditor.csproj", "{F768F9EC-FDB8-1C48-0BEF-7F9432A591FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFXR.WelcomeScreen", "CFXR.WelcomeScreen.csproj", "{4E6C2E32-6E80-E7EA-5EFE-0D2AF6D33CB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToonyColorsPro.Demo.Editor", "ToonyColorsPro.Demo.Editor.csproj", "{EEB2FD07-8E4F-E759-45D2-ABFF968A6ED6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5B8473D-752F-EC0E-87B6-0D8748C7D2C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5B8473D-752F-EC0E-87B6-0D8748C7D2C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5B8473D-752F-EC0E-87B6-0D8748C7D2C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5B8473D-752F-EC0E-87B6-0D8748C7D2C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFD8AF66-C2B9-D103-5F6C-034BD6FA5F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD8AF66-C2B9-D103-5F6C-034BD6FA5F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD8AF66-C2B9-D103-5F6C-034BD6FA5F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD8AF66-C2B9-D103-5F6C-034BD6FA5F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B6D0451-BD50-DF1D-E344-3073D67C5B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B6D0451-BD50-DF1D-E344-3073D67C5B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B6D0451-BD50-DF1D-E344-3073D67C5B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B6D0451-BD50-DF1D-E344-3073D67C5B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDA06DB4-CE24-3CF2-2EA7-F2BDC416397B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA06DB4-CE24-3CF2-2EA7-F2BDC416397B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDA06DB4-CE24-3CF2-2EA7-F2BDC416397B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA06DB4-CE24-3CF2-2EA7-F2BDC416397B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{001CE11E-04FD-BC06-E18F-8858200F0955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001CE11E-04FD-BC06-E18F-8858200F0955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001CE11E-04FD-BC06-E18F-8858200F0955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001CE11E-04FD-BC06-E18F-8858200F0955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F768F9EC-FDB8-1C48-0BEF-7F9432A591FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F768F9EC-FDB8-1C48-0BEF-7F9432A591FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F768F9EC-FDB8-1C48-0BEF-7F9432A591FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F768F9EC-FDB8-1C48-0BEF-7F9432A591FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E6C2E32-6E80-E7EA-5EFE-0D2AF6D33CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E6C2E32-6E80-E7EA-5EFE-0D2AF6D33CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E6C2E32-6E80-E7EA-5EFE-0D2AF6D33CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E6C2E32-6E80-E7EA-5EFE-0D2AF6D33CB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB2FD07-8E4F-E759-45D2-ABFF968A6ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB2FD07-8E4F-E759-45D2-ABFF968A6ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB2FD07-8E4F-E759-45D2-ABFF968A6ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB2FD07-8E4F-E759-45D2-ABFF968A6ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
