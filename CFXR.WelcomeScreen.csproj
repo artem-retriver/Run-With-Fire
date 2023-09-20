@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4E6C2E32-6E80-E7EA-5EFE-0D2AF6D33CB6}</ProjectGuid>
+    <ProjectGuid>{19BF2D4B-38A8-5AE8-F2BC-2846F10F5225}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>CFXR.WelcomeScreen</AssemblyName>

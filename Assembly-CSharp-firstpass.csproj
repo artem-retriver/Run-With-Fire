@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CDA06DB4-CE24-3CF2-2EA7-F2BDC416397B}</ProjectGuid>
+    <ProjectGuid>{5E607E31-25E2-7349-5F7D-8BFBE0638EA8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -752,6 +752,12 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
@@ -764,36 +770,30 @@
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
-      <Project>{EEB2FD07-8E4F-E759-45D2-ABFF968A6ED6}</Project>
+      <Project>{8A06D6CE-30BF-E960-2772-ADF4FA8EC5C7}</Project>
       <Name>ToonyColorsPro.Demo.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="KinoBloom.Runtime.csproj">
-      <Project>{001CE11E-04FD-BC06-E18F-8858200F0955}</Project>
+      <Project>{C21BAE13-AE9B-766A-E07A-23F5AE800747}</Project>
       <Name>KinoBloom.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="CFXREditor.csproj">
-      <Project>{F768F9EC-FDB8-1C48-0BEF-7F9432A591FB}</Project>
+      <Project>{9127315E-B799-A735-67C3-30D7C6DAE640}</Project>
       <Name>CFXREditor</Name>
     </ProjectReference>
     <ProjectReference Include="CFXRDemo.csproj">
-      <Project>{C5B8473D-752F-EC0E-87B6-0D8748C7D2C3}</Project>
+      <Project>{B92B4294-8D8E-FA69-4B8C-517E525611D6}</Project>
       <Name>CFXRDemo</Name>
     </ProjectReference>
     <ProjectReference Include="CFXR.WelcomeScreen.csproj">
-      <Project>{4E6C2E32-6E80-E7EA-5EFE-0D2AF6D33CB6}</Project>
+      <Project>{19BF2D4B-38A8-5AE8-F2BC-2846F10F5225}</Project>
       <Name>CFXR.WelcomeScreen</Name>
     </ProjectReference>
     <ProjectReference Include="CFXRRuntime.csproj">
-      <Project>{1B6D0451-BD50-DF1D-E344-3073D67C5B5D}</Project>
+      <Project>{2F030BF9-2B3A-ABE6-4A28-DE30269B3035}</Project>
       <Name>CFXRRuntime</Name>
     </ProjectReference>
   </ItemGroup>

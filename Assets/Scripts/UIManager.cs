@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class UIManager : MonoBehaviour
     public GameObject[] sceneUI;
     public GameObject[] fireLifeOn;
     public GameObject[] fireLifeOff;
+    public TextMeshProUGUI[] scoreText;
 
     private bool infoSceneOn;
     private bool pauseSceneOn;
@@ -113,6 +116,21 @@ public class UIManager : MonoBehaviour
             infoSceneOn = false;
             sceneUI[3].SetActive(false);
         }
+    }
+
+    public void LoseScrene()
+    {
+        scoreText[1].text = scoreText[0].text;
+
+        sceneUI[2].SetActive(false);
+        sceneUI[4].SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void RepeatScene()
+    {
+        SceneManager.LoadScene("MainScene");
+        Time.timeScale = 1f;
     }
 
     public void PauseScene()

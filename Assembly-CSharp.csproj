@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DFD8AF66-C2B9-D103-5F6C-034BD6FA5F1B}</ProjectGuid>
+    <ProjectGuid>{3EFB0868-1766-9E9B-FAD3-B5172ED0DC02}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Fire.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\Scripts\SwipeController.cs" />
@@ -65,20 +66,20 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Scripts\MoveController.cs" />
+    <Compile Include="Assets\Scripts\CameraMoveController.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
     <Compile Include="Assets\HandTorch\Scripts\RotateObject.cs" />
+    <Compile Include="Assets\Scripts\Tonel.cs" />
     <Compile Include="Assets\HandTorch\Scripts\ToggleLight.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
+    <Compile Include="Assets\Scripts\Water.cs" />
     <Compile Include="Assets\Scripts\CameraMoveAfterStart.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\Scripts\VolumeController.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightFlicker.cs" />
-    <Compile Include="Assets\Scripts\CameraMoveController.cs" />
-    <Compile Include="Assets\Scripts\VolumeController.cs" />
-    <Compile Include="Assets\Scripts\Tonel.cs" />
-    <Compile Include="Assets\Scripts\Fire.cs" />
-    <Compile Include="Assets\Scripts\Water.cs" />
+    <Compile Include="Assets\Scripts\SavesScoreAndVolume.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -801,6 +802,12 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
@@ -813,40 +820,34 @@
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{CDA06DB4-CE24-3CF2-2EA7-F2BDC416397B}</Project>
+      <Project>{5E607E31-25E2-7349-5F7D-8BFBE0638EA8}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
-      <Project>{EEB2FD07-8E4F-E759-45D2-ABFF968A6ED6}</Project>
+      <Project>{8A06D6CE-30BF-E960-2772-ADF4FA8EC5C7}</Project>
       <Name>ToonyColorsPro.Demo.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="KinoBloom.Runtime.csproj">
-      <Project>{001CE11E-04FD-BC06-E18F-8858200F0955}</Project>
+      <Project>{C21BAE13-AE9B-766A-E07A-23F5AE800747}</Project>
       <Name>KinoBloom.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="CFXREditor.csproj">
-      <Project>{F768F9EC-FDB8-1C48-0BEF-7F9432A591FB}</Project>
+      <Project>{9127315E-B799-A735-67C3-30D7C6DAE640}</Project>
       <Name>CFXREditor</Name>
     </ProjectReference>
     <ProjectReference Include="CFXRDemo.csproj">
-      <Project>{C5B8473D-752F-EC0E-87B6-0D8748C7D2C3}</Project>
+      <Project>{B92B4294-8D8E-FA69-4B8C-517E525611D6}</Project>
       <Name>CFXRDemo</Name>
     </ProjectReference>
     <ProjectReference Include="CFXR.WelcomeScreen.csproj">
-      <Project>{4E6C2E32-6E80-E7EA-5EFE-0D2AF6D33CB6}</Project>
+      <Project>{19BF2D4B-38A8-5AE8-F2BC-2846F10F5225}</Project>
       <Name>CFXR.WelcomeScreen</Name>
     </ProjectReference>
     <ProjectReference Include="CFXRRuntime.csproj">
-      <Project>{1B6D0451-BD50-DF1D-E344-3073D67C5B5D}</Project>
+      <Project>{2F030BF9-2B3A-ABE6-4A28-DE30269B3035}</Project>
       <Name>CFXRRuntime</Name>
     </ProjectReference>
   </ItemGroup>

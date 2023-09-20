@@ -4,17 +4,25 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private UIManager uIManager;
+    public UIManager uIManager;
     private PlayerController playerController;
     public GameObject startTonel;
     public List<GameObject> newLevels;
 
     public int countFire = 3;
+    public int scoreCount;
+    public int bestScoreCount;
 
     private void Start()
     {
         uIManager = FindObjectOfType<UIManager>();
         playerController = FindObjectOfType<PlayerController>();
+
+        if (PlayerPrefs.HasKey("Score"))
+        {
+            bestScoreCount = PlayerPrefs.GetInt("Score");
+            uIManager.scoreText[3].text = bestScoreCount.ToString();
+        }
     }
 
     public void InstantiateLevel()
@@ -37,6 +45,16 @@ public class GameManager : MonoBehaviour
         {
             playerController.isAlive = false;
             playerController.fireTorch.SetActive(false);
+            uIManager.LoseScrene();
+
+            if (bestScoreCount < scoreCount)
+            {
+                bestScoreCount = scoreCount;
+                PlayerPrefs.SetInt("Score", bestScoreCount);
+                
+            }
+
+            uIManager.scoreText[2].text = bestScoreCount.ToString();
         }
     }
 

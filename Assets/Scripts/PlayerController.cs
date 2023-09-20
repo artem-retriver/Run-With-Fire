@@ -83,6 +83,17 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(WaitGameCoroutine());
     }
 
+    private IEnumerator ScoreTimer()
+    {
+        while(isAlive == true)
+        {
+            gameManager.scoreCount++;
+            gameManager.uIManager.scoreText[0].text = gameManager.scoreCount.ToString();
+
+            yield return new WaitForSeconds(1f);
+        }
+    }
+
     private IEnumerator WaitActiveFire(Collider collider)
     {
         yield return new WaitForSeconds(3f);
@@ -95,5 +106,7 @@ public class PlayerController : MonoBehaviour
         //moveAfterStart.OffCamera();
         isAlive = true;
         anim.Play("Run");
+
+        StartCoroutine(ScoreTimer());
     }
 }

@@ -18,9 +18,4 @@ public class CameraMoveAfterStart : MonoBehaviour
         var i = cinemachine.GetCinemachineComponent<CinemachineOrbitalTransposer>();
         i.m_XAxis.m_InputAxisValue = 1;
     }
-
-    /*public void OffCamera()
-    {
-        cinemachine.enabled = false;
-    }*/
 }
