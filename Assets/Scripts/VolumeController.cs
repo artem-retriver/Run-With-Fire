@@ -8,6 +8,7 @@ public class VolumeController : MonoBehaviour
     public AudioSource[] audioSources;
     public GameObject[] imageVolume;
     public Slider slider;
+
     public float musicVolume = 1;
 
     private void Update()

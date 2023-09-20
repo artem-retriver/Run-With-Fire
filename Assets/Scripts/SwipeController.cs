@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class SwipeController : MonoBehaviour
 {
-    public static bool tap, swipeLeft, swipeRight, swipeUp, swipeDown;
+    public static bool tap, swipeLeft, swipeRight;
     private bool isDraging = false;
     private Vector2 startTouch, swipeDelta;
 
     private void Update()
     {
-        tap = swipeDown = swipeUp = swipeLeft = swipeRight = false;
+        tap = swipeLeft = swipeRight = false;
         #region ??-??????
         if (Input.GetMouseButtonDown(0))
         {
@@ -63,17 +63,9 @@ public class SwipeController : MonoBehaviour
                 else
                     swipeRight = true;
             }
-            else
-            {
-                if (y < 0)
-                    swipeDown = true;
-                else
-                    swipeUp = true;
-            }
 
             Reset();
         }
-
     }
 
     private void Reset()

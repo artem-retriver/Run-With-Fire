@@ -6,7 +6,7 @@ public class SavesScoreAndVolume : MonoBehaviour
 {
     private VolumeController volumeController;
 
-    public float saveVolume;
+    private float saveVolume;
 
     private void Start()
     {

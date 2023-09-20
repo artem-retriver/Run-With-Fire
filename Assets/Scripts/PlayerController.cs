@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     private Light lightTorch;
 
     public GameObject fireTorch;
-    //private CameraMoveAfterStart moveAfterStart;
 
     public bool isAlive = false;
 
@@ -21,9 +20,6 @@ public class PlayerController : MonoBehaviour
         moveController = GetComponent<MoveController>();
         gameManager = FindObjectOfType<GameManager>();
         lightTorch = GetComponentInChildren<Light>();
-        //moveAfterStart = FindObjectOfType<CameraMoveAfterStart>();
-        //anim.Play("Idle");
-        //IsAlive();
     }
 
     public void Update()
@@ -103,7 +99,6 @@ public class PlayerController : MonoBehaviour
     private IEnumerator WaitGameCoroutine()
     {
         yield return new WaitForSeconds(5f);
-        //moveAfterStart.OffCamera();
         isAlive = true;
         anim.Play("Run");
 

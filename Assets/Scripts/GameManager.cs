@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     public int countFire = 3;
     public int scoreCount;
-    public int bestScoreCount;
+    private int bestScoreCount;
 
     private void Start()
     {
@@ -55,7 +55,6 @@ public class GameManager : MonoBehaviour
             {
                 bestScoreCount = scoreCount;
                 PlayerPrefs.SetInt("Score", bestScoreCount);
-                
             }
 
             uIManager.scoreText[2].text = bestScoreCount.ToString();

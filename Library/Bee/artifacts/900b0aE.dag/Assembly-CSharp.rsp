@@ -370,7 +370,6 @@
 "Assets/JMO Assets/Cartoon FX (legacy)/Scripts/CFX_LightFlicker.cs"
 "Assets/JMO Assets/Cartoon FX (legacy)/Scripts/CFX_LightIntensityFade.cs"
 "Assets/Scripts/CameraMoveAfterStart.cs"
-"Assets/Scripts/CameraMoveController.cs"
 "Assets/Scripts/Fire.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/MoveController.cs"
