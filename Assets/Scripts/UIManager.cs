@@ -37,23 +37,6 @@ public class UIManager : MonoBehaviour
         playerController.IsAlive();
     }
 
-    public void InfoScene()
-    {
-        if (infoSceneOn == false)
-        {
-            infoSceneOn = true;
-            settingsSceneOn = false;
-            sceneUI[3].SetActive(false);
-            sceneUI[0].SetActive(true);
-        }
-        else
-        {
-            infoSceneOn = false;
-            settingsSceneOn = false;
-            sceneUI[0].SetActive(false);
-        }
-    }
-
     public void CalculateIncreaseFireLife(int fire)
     {
         for (int i = 0; i < fire; i++)
@@ -115,6 +98,23 @@ public class UIManager : MonoBehaviour
             settingsSceneOn = false;
             infoSceneOn = false;
             sceneUI[3].SetActive(false);
+        }
+    }
+
+    public void InfoScene()
+    {
+        if (infoSceneOn == false)
+        {
+            infoSceneOn = true;
+            settingsSceneOn = false;
+            sceneUI[3].SetActive(false);
+            sceneUI[0].SetActive(true);
+        }
+        else
+        {
+            infoSceneOn = false;
+            settingsSceneOn = false;
+            sceneUI[0].SetActive(false);
         }
     }
 

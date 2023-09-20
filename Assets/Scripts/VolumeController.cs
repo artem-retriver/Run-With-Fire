@@ -31,8 +31,20 @@ public class VolumeController : MonoBehaviour
         }
     }
 
+    public void ActiveExtinguishingfire()
+    {
+        StartCoroutine(WaitSetActiveFalseAudio());
+    }
+
     public void SetVolume(float vol)
     {
         musicVolume = vol;
+    }
+
+    private IEnumerator WaitSetActiveFalseAudio()
+    {
+        audioSources[1].gameObject.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        audioSources[1].gameObject.SetActive(false);
     }
 }

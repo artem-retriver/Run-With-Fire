@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public UIManager uIManager;
     private PlayerController playerController;
+    private VolumeController volumeController;
     public GameObject startTonel;
     public List<GameObject> newLevels;
 
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
     {
         uIManager = FindObjectOfType<UIManager>();
         playerController = FindObjectOfType<PlayerController>();
+        volumeController = FindObjectOfType<VolumeController>();
 
         if (PlayerPrefs.HasKey("Score"))
         {
@@ -35,6 +37,8 @@ public class GameManager : MonoBehaviour
     public void DecreaseFire()
     {
         countFire--;
+
+        volumeController.ActiveExtinguishingfire();
 
         if (countFire >= 0)
         {
